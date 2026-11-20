@@ -350,8 +350,8 @@ void UpdateMotors()
 
     SetMotorLDirection(wantedSpeedL>0);
     SetMotorRDirection(wantedSpeedR>0);
-    wantedSpeedL = abs(wantedSpeedL);
-    wantedSpeedR = abs(wantedSpeedR);
+    double wantedSpeedL2 = abs(wantedSpeedL);
+    double wantedSpeedR2 = abs(wantedSpeedR);
     if (dt <= 0)
         return;
 
@@ -359,10 +359,10 @@ void UpdateMotors()
         now;
 
     double error1 =
-        wantedSpeedL - m1Speed;
+        wantedSpeedL2 - m1Speed;
 
     double error2 =
-        wantedSpeedR - m2Speed;
+        wantedSpeedR2 - m2Speed;
 
     m1Integral += error1 * dt;
     m2Integral += error2 * dt;
