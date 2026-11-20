@@ -159,7 +159,7 @@ void loop()
 
     static unsigned long lastPrint = 0;
 
-    if (millis() - lastPrint >= SPEED_WINDOW_MS)
+    if (millis() - lastPrint >= SPEED_WINDOW_MS && 0)
     {
         lastPrint = millis();
 
