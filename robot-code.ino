@@ -21,7 +21,7 @@ const int filter = 5000;
 const unsigned long SPEED_WINDOW_MS = 200;
 const int AIN1 = 8;
 const int AIN2 = 12;
-const float maxSpeed = 80;
+const float maxSpeed = 50;
 char rxBuffer[32];
 byte rxIndex = 0;
 int lastM1Ticks = 0;
