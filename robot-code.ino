@@ -132,7 +132,11 @@ void setup()
     lastSpeedUpdate = millis();
      
     
+    byte resetCause = MCUSR;
+MCUSR = 0;
 
+Serial.print("RESET CAUSE=");
+Serial.println(resetCause, BIN);
     Serial.println("READY");
 
    // DriveAngle(20,30);
