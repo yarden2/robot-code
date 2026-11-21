@@ -352,8 +352,11 @@ void UpdateMotors()
         (now - lastControlTime)
         / 1000.0;
 
-    SetMotorLDirection(wantedSpeedL>0);
-    SetMotorRDirection(wantedSpeedR>0);
+    //SetMotorLDirection(wantedSpeedL>0);
+    //SetMotorRDirection(wantedSpeedR>0);
+
+    SetMotorLDirection(True);
+    SetMotorRDirection(True);
     double wantedSpeedL2 = abs(wantedSpeedL);
     double wantedSpeedR2 = abs(wantedSpeedR);
     if (dt <= 0)
