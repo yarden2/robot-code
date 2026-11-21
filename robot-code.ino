@@ -235,7 +235,7 @@ while (Serial.available())
 
             // Check for "(speed,angle)" format
             float speed, angle;
-            Serial.println(rxBuffer);
+           // Serial.println(rxBuffer);
             char* comma = strchr(rxBuffer, ',');
 
 if (rxBuffer[0] == '(' && comma)
