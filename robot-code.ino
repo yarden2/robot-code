@@ -357,7 +357,7 @@ void UpdateMotors()
 
     SetMotorLDirection(1);
     SetMotorRDirection(1);
-    double wantedSpeedL2 = abs(wantedSpeedL);
+    double wantedSpeedL2 = abs(wantedSpeedL)
     double wantedSpeedR2 = abs(wantedSpeedR);
     if (dt <= 0)
         return;
