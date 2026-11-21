@@ -80,7 +80,7 @@ double m2Integral = 0;
 double m1PrevError = 0;
 double m2PrevError = 0;
 
-const double Kp = 0.15;
+const double Kp = 1.5;
 const double Ki = 0;
 const double Kd = 0.05;
 
@@ -156,7 +156,7 @@ void loop()
     }
     GetSpeed();
 
-    if (millis() - lastControlTime >= 20)
+    if (millis() - lastControlTime >= SPEED_WINDOW_MS)
     {
         UpdateMotors();
     }
@@ -409,11 +409,11 @@ void UpdateMotors()
 
     analogWrite(
         PWMA,
-        (int)0);
+        (int)m1Power);
 
     analogWrite(
         PWMB,
-        (int)0);
+        (int)m2Power);
 }
 
 // =====================================================
