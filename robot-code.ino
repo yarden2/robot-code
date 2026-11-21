@@ -152,7 +152,7 @@ void loop()
     wantedSpeedL = round(wantedSpeedL / SPEED_RESOLUTION) * SPEED_RESOLUTION;
 
     if(wantedSpeedR ==0 && wantedSpeedL == 0){
-        Stop();
+       // Stop();
     }
     GetSpeed();
 
