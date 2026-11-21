@@ -247,11 +247,11 @@ if (rxBuffer[0] == '(' && comma)
 
     DriveAngle(speed*maxSpeed, angle);
 
-    Serial.print("DriveAngle(");
-    Serial.print(speed);
-    Serial.print(",");
-    Serial.print(angle);
-    Serial.println(")");
+   // Serial.print("DriveAngle(");
+   // Serial.print(speed);
+    //Serial.print(",");
+    //Serial.print(angle);
+    //Serial.println(")");
     
 }
             else
