@@ -407,13 +407,13 @@ void UpdateMotors()
     m2Power =
         constrain(m2Power, 0, 255);
 
-   // analogWrite(
-        //PWMA,
-        //(int)m1Power);
+    analogWrite(
+        PWMA,
+        (int)m1Power);
 
-    //analogWrite(
-       // PWMB,
-        //(int)m2Power);
+    analogWrite(
+        PWMB,
+        (int)m2Power);
 }
 
 // =====================================================
