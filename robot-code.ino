@@ -409,11 +409,11 @@ void UpdateMotors()
 
     analogWrite(
         PWMA,
-        (int)0);
+        100);
 
     analogWrite(
         PWMB,
-        (int)0);
+        100);
 }
 
 // =====================================================
