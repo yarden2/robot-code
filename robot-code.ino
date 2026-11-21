@@ -353,7 +353,7 @@ void UpdateMotors()
         / 1000.0;
 
     //SetMotorLDirection(wantedSpeedL>0);
-    //SetMotorRDirection(wantedSpeedR>0)
+    //SetMotorRDirection(wantedSpeedR>0);
 
     SetMotorLDirection(True);
     SetMotorRDirection(True);
