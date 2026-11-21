@@ -270,9 +270,13 @@ if (rxBuffer[0] == '(' && comma)
         }
     }
     else if (rxIndex < sizeof(rxBuffer) - 1)
-    {
-        rxBuffer[rxIndex++] = c;
-    }
+{
+    rxBuffer[rxIndex++] = c;
+}
+else
+{
+    rxIndex = 0;
+}
 }
 
 
