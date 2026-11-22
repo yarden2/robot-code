@@ -94,6 +94,7 @@ const float SPEED_RESOLUTION =
 
 void setup()
 {
+    byte reason = MCUSR;
     Serial.begin(9600);
 
     pinMode(STBY, OUTPUT);
@@ -132,11 +133,10 @@ void setup()
     lastSpeedUpdate = millis();
      
     
-    byte resetCause = MCUSR;
-MCUSR = 0;
+   
 
 Serial.print("RESET CAUSE=");
-Serial.println(resetCause, BIN);
+Serial.println(reason);
     Serial.println("READY");
 
    // DriveAngle(20,30);
