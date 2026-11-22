@@ -156,7 +156,7 @@ void loop()
     }
     GetSpeed();
 
-    if (millis() - lastControlTime >= SPEED_WINDOW_MS)
+    if (millis() - lastControlTime >= 20)
     {
         UpdateMotors();
     }
